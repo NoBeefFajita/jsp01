@@ -12,7 +12,9 @@ pageEncoding="UTF-8"%>
 <body>
 	<%-- 서블릿의 정보출력 --%>
 	<%= getServletInfo() %> <br>
-	<%-- 개발경로가 아닌 서비스 경로(배포 경로) --%>
+	<%-- 개발경로가 아닌 서비스 경로(배포 경로) --%> 서비스 경로
 	<%= application.getRealPath("/") %>
+	<br>경로<br>
+	<%= request.getContextPath() %>
 </body>
 </html>
